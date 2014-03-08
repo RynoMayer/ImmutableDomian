@@ -40,7 +40,7 @@ public class stationaryTest {
     public void testUpdate() throws Exception{
         
         stationary pen = new stationary.Builder("Itmpen").descrip("writeInk").brand("penflex").Build();
-        Assert.assertEquals(pen.getBarcode(),"Itmpen",pen.getBrand());
+        Assert.assertEquals(pen.getBrand(),"penflex");
     }
     
     @BeforeClass

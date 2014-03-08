@@ -39,7 +39,7 @@ public class hardwareTest {
     public void testUpdate() throws Exception{
         
         hardware ItemB = new hardware.Builder("ItmNail").descrip("longNail").brand("generic").Build();
-        Assert.assertEquals(ItemB.getBarcode(),"ItmNail",ItemB.getDescrip());
+        Assert.assertEquals(ItemB.getDescrip(),"longNail");
     }
     
     @BeforeClass

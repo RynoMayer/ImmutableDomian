@@ -2,9 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ryno.tp.immutablewarehouseretailer.model.supplier;
+package com.ryno.tp.immutablewarehouseretailer.model.supplierTest;
 
 import com.ryno.tp.immutablewarehouseretailer.model.product.sportware;
+import com.ryno.tp.immutablewarehouseretailer.model.supplier.items;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -17,30 +18,31 @@ import org.testng.annotations.Test;
  *
  * @author ryno
  */
-public class orderTest {
+public class itemsTest {
     
-    public orderTest() {
+    public itemsTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test
     // public void hello() {}
-    
+
     @Test
     public void testCreation(){
         
-        order orderA = new order.Builder("Fanta","ItmFanta001","Coca-Cola","softdrink").build();
-        Assert.assertEquals(orderA.getBarcode(),"ItmFanta001");
+        items ItemA = new items.Builder("ItmGlass").descrip("glass").build();
+        Assert.assertEquals(ItemA.getBarcode(),"ItmGlass",ItemA.getDescrip());
         
     }
     
     @Test
     public void testUpdate() throws Exception{
         
-        order orderB = new order.Builder("hammer","ItmHammer005","stahl","hardware").build();
-        Assert.assertEquals(orderB.getBarcode(),"ItmHammer005");
+        items ItemB = new items.Builder("ItmAshtray").descrip("Ashtray").build();
+        Assert.assertEquals(ItemB.getDescrip(),"Ashtray");
     }
+    
     
     @BeforeClass
     public static void setUpClass() throws Exception {

@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ryno.tp.immutablewarehouseretailer.model.productTest;
+package com.ryno.tp.immutablewarehouseretailer.model.supplierTest;
 
-import com.ryno.tp.immutablewarehouseretailer.model.product.Item;
 import com.ryno.tp.immutablewarehouseretailer.model.product.sportware;
+import com.ryno.tp.immutablewarehouseretailer.model.supplier.supplier;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,29 +18,29 @@ import org.testng.annotations.Test;
  *
  * @author ryno
  */
-public class sportwareTest {
+public class supplierTest {
     
-    public sportwareTest() {
+    public supplierTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
     //
     // @Test
     // public void hello() {}
-
+    
     @Test
     public void testCreation(){
         
-        sportware ItemA = new sportware.Builder("ItmOlyRun").descrip("shoe").brand("olypics").Build();
-        Assert.assertEquals(ItemA.getBarcode(),"ItmOlyRun",ItemA.getDescrip());
+        supplier supp1 = new supplier.Builder("Coca-Cola","softdrink").build();
+        Assert.assertEquals(supp1.getCompany(),"Coca-Cola");
         
     }
     
     @Test
     public void testUpdate() throws Exception{
         
-        sportware ItemB = new sportware.Builder("ItmAddRuns").descrip("trainer").brand("addidas").Build();
-        Assert.assertEquals(ItemB.Types(),"sportware");
+        supplier supp2 = new supplier.Builder("samsung","Electronics").build();
+        Assert.assertEquals(supp2.getType(),"Electronics");
     }
     
     @BeforeClass

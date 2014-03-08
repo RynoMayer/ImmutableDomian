@@ -2,10 +2,10 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.ryno.tp.immutablewarehouseretailer.model.productTest;
+package com.ryno.tp.immutablewarehouseretailer.model.registerTest;
 
-import com.ryno.tp.immutablewarehouseretailer.model.product.Item;
-import com.ryno.tp.immutablewarehouseretailer.model.product.sportware;
+import com.ryno.tp.immutablewarehouseretailer.model.till.Coins;
+import com.ryno.tp.immutablewarehouseretailer.model.till.notes;
 import org.testng.Assert;
 import static org.testng.Assert.*;
 import org.testng.annotations.AfterClass;
@@ -18,9 +18,9 @@ import org.testng.annotations.Test;
  *
  * @author ryno
  */
-public class sportwareTest {
+public class notesTest {
     
-    public sportwareTest() {
+    public notesTest() {
     }
     // TODO add test methods here.
     // The methods must be annotated with annotation @Test. For example:
@@ -31,17 +31,17 @@ public class sportwareTest {
     @Test
     public void testCreation(){
         
-        sportware ItemA = new sportware.Builder("ItmOlyRun").descrip("shoe").brand("olypics").Build();
-        Assert.assertEquals(ItemA.getBarcode(),"ItmOlyRun",ItemA.getDescrip());
+        notes noteA = new notes.Builder("R",200).build();
+        Assert.assertEquals(noteA.getValue(),200);
         
     }
     
     @Test
     public void testUpdate() throws Exception{
         
-        sportware ItemB = new sportware.Builder("ItmAddRuns").descrip("trainer").brand("addidas").Build();
-        Assert.assertEquals(ItemB.Types(),"sportware");
-    }
+        notes noteB = new notes.Builder("R",50).build();
+        Assert.assertEquals(noteB.getAbbv(),"R");
+    }    
     
     @BeforeClass
     public static void setUpClass() throws Exception {

@@ -53,8 +53,8 @@ public final class order implements ManageOrder{
             return new order(this);
         }
         
-        public Builder addOrder(Builder b){
-            orderList.add((ManageOrder) b);
+        public Builder addOrder(order b){
+            orderList.add( b);
             return this;
         }
     }

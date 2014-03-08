@@ -40,7 +40,7 @@ public class ManagerTest {
     public void testUpdate() throws Exception{
         
         Manager manB = new Manager.Builder("Emily", "Man008", 2000).Build();
-        Assert.assertEquals(manB.getEmpNum(),"Man008");
+        Assert.assertEquals(manB.getName(),"Emily");
     }
     
     @BeforeClass

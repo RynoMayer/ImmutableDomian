@@ -40,7 +40,7 @@ public class stocketTest {
     public void testUpdate() throws Exception{
         
         Stocker stocker2 = new Stocker.Builder("Andy", "cash088", 1100).Build();
-        Assert.assertEquals(stocker2.getEmpNum(),"cash088");
+        Assert.assertEquals(stocker2.returnSalary(),1100);
     }
     
     @BeforeClass

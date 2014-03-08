@@ -12,5 +12,5 @@ import java.util.List;
  * @author ryno
  */
 public interface ManageOrder {
-    public List<ManageOrder> orderList = new ArrayList<ManageOrder>();
+    public List<order> orderList = new ArrayList<order>();
 }

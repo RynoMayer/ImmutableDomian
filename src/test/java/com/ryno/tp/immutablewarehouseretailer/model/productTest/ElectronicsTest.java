@@ -30,16 +30,16 @@ public class ElectronicsTest {
     @Test
     public void testCreation(){
         
-        Electronics ItemA = new Electronics.Builder("ITMhammer").descrip("flathead").brand("stahl").Build();
-        Assert.assertEquals(ItemA.getBarcode(),"ITMhammer",ItemA.getDescrip());
+        Electronics ItemA = new Electronics.Builder("Itm321").descrip("Radio").brand("pioneer").Build();
+        Assert.assertEquals(ItemA.getBarcode(),"Itm321",ItemA.getDescrip());
         
     }
     
     @Test
     public void testUpdate() throws Exception{
         
-        Electronics ItemB = new Electronics.Builder("ItmNail").descrip("longNail").brand("generic").Build();
-        Assert.assertEquals(ItemB.getBarcode(),"ItmNail",ItemB.getDescrip());
+        Electronics ItemB = new Electronics.Builder("Itm987").descrip("TV").brand("panasonic").Build();
+        Assert.assertEquals(ItemB.getBrand(),"panasonic");
     }
 
     @BeforeClass

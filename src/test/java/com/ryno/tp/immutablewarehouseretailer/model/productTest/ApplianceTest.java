@@ -31,16 +31,16 @@ public class ApplianceTest {
     @Test
     public void testCreation(){
         
-        Appliance ItemA = new Appliance.Builder("ITMhammer").descrip("flathead").brand("stahl").Build();
-        Assert.assertEquals(ItemA.getBarcode(),"ITMhammer",ItemA.getDescrip());
+        Appliance ItemA = new Appliance.Builder("Itm8512").descrip("microwave").brand("amg").Build();
+        Assert.assertEquals(ItemA.getBarcode(),"Itm8512",ItemA.getDescrip());
         
     }
     
     @Test
     public void testUpdate() throws Exception{
         
-        Appliance ItemB = new Appliance.Builder("ItmNail").descrip("longNail").brand("generic").Build();
-        Assert.assertEquals(ItemB.getBarcode(),"ItmNail",ItemB.getDescrip());
+        Appliance ItemB = new Appliance.Builder("Itm741").descrip("Toaster").brand("kelvin").Build();
+        Assert.assertEquals(ItemB.getBrand(),"kelvin");
     }
 
     @BeforeClass

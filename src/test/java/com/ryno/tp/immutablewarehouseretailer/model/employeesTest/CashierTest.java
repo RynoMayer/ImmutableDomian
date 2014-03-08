@@ -40,7 +40,7 @@ public class CashierTest {
     public void testUpdate() throws Exception{
         
         cashier cash = new cashier.Builder("Andy", "cash088", 1100).Build();
-        Assert.assertEquals(cash.getEmpNum(),"cash088");
+        Assert.assertEquals(cash.returnSalary(),1600);
     }
     
     @BeforeClass
