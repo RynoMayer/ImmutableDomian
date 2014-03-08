@@ -41,6 +41,10 @@ public final class Stocker implements Employees{
             this.salary=sal;
         }
         
+        public Builder setSalary(double sal){
+            this.salary=sal;
+            return this;
+        }
         public Stocker Build(){
             return new Stocker(this);
         }

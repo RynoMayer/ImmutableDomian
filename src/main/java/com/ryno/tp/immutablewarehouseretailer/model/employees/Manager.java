@@ -41,6 +41,11 @@ public final class Manager implements Employees{
             this.salary=sal;
         }
         
+        public Builder setName(String n)
+        {
+            this.name=n;
+            return this;
+        }
         public Manager Build(){
             return new Manager(this);
         }

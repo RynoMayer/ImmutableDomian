@@ -42,6 +42,10 @@ public final class cashier implements Employees{
             this.salary=sal;
         }
         
+        public Builder setName(String n){
+            this.name=n;
+            return this;
+        }
         public cashier Build(){
             return new cashier(this);
         }

@@ -39,8 +39,8 @@ public class CashierTest {
     @Test
     public void testUpdate() throws Exception{
         
-        cashier cash = new cashier.Builder("Andy", "cash088", 1100).Build();
-        Assert.assertEquals(cash.returnSalary(),1600);
+        cashier cash = new cashier.Builder("Andy", "cash088", 1100).setName("jane").Build();
+        Assert.assertEquals(cash.getName(),"jane");
     }
     
     @BeforeClass
