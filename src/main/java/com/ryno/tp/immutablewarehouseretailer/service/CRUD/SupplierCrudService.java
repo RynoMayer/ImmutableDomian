@@ -4,13 +4,13 @@
  */
 package com.ryno.tp.immutablewarehouseretailer.service.CRUD;
 
-import com.ryno.tp.immutablewarehouseretailer.model.Author;
+import com.ryno.tp.immutablewarehouseretailer.model.supplier.supplier;
 import com.ryno.tp.immutablewarehouseretailer.service.crudService;
 
 /**
  *
  * @author ryno
  */
-public interface AuthorCrudService extends crudService < Author, String>{
+public interface SupplierCrudService extends crudService <supplier, String>{
     
 }
